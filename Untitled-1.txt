@@ -1,0 +1,410 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(240, 239, 243);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body{
+    background-color: rgb(2, 20, 24);
+    display: flex;
+}
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.mean{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transform: .55;
+}
+.mean:hover{
+    width: 260px;
+}
+
+ul{
+    list-style: none;
+    /* هنا بقوم بخذف النقاط الموجوده في القائمه */
+    position: relative;
+    height: 95%;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    /* يزيل خط الرابط */
+    padding:10px ;
+    margin: 10px;
+border-radius: 8px;
+display: flex;
+align-items: center;
+gap: 40px;
+}
+ul li a:hover, .active, .data-info .box:hover,td:hover{
+    background-color: rgb(97, 78, 78);
+
+}
+
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+}
+.log-out a{
+    background-color: #123:
+}
+ul li a i{
+    font-size: 30px;
+    color:rgb(251, 253, 253) ;
+}
+
+.content{
+   
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: rgb(1, 56, 56);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:8px;
+    margin: 10px 0;
+
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.data-info .box i{
+    font-size: 40px;
+
+}
+.data-info .box .data{
+    text-align: center;
+}
+
+.data-info .box .span{
+    font-size: 30px;
+
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td,th{
+    background-color:#123;
+    height: 40px;
+    border-radius: 8px;
+   
+}
+th{
+    background-color:rgb(1, 56, 56);
+
+}
+
+.spice, .count{
+    padding: 6px;
+    border-radius: 6px;
+
+
+}
+.price{
+    background-color: rgb(250, 147, 12);;
+    color: black;
+}
+
+.count{
+    background-color: rgb(250, 147, 12);
+    color: black;
+}
+
+
+
+
+
+
+
+ </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<div class="mean">
+<ul>
+    <li class="profile">
+        <div class="img-box">
+            <img src="azam.jpg" alt="profile">
+
+        </div>
+        <h2>asrar nageeb</h2>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-home"></i>
+           <p>الرئيسية </p>
+            
+
+        </a>
+    </li>
+
+
+    <li>
+        <a href="#">
+            <i class="fas fa-user-group"></i>
+            <p>العملاء</p>
+            
+
+        </a>
+    </li>
+
+
+    <li>
+        <a href="#">
+            <i class="fas fa-table"></i>
+            <p>المنتجات</p>
+            
+
+        </a>
+    </li>
+
+    <li>
+        <a href="#">
+            <i class="fas fa-chart-pie"></i>
+            <p>charts</p>
+            
+
+        </a>
+    </li>
+
+
+    <li>
+        <a href="#">
+            <i class="fas fa-pen"></i>
+            <p>postes</p>
+            
+
+        </a>
+    </li>
+
+    <li>
+        <a href="#">
+            <i class="fas fa-star"></i>
+            <p>المميزه</p>
+        
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-cog"></i>
+            <p>الاعدادات</p>
+
+        </a>
+    </li>
+    <li class="log-out ">
+        <a href="#">
+            <i class="fas fa-sign-out"></i>
+            <p>log out</p>
+            
+        </a>
+    </li>
+</ul>
+</div>
+
+<div class="content">
+<div class="title-info">
+    <p>dashboard</p>
+    <i class="fas fa-chart-bar"></i>
+</div>
+
+<div class="data-info">
+
+
+
+
+    
+<div class="content">
+    <div class="title-info">
+        <p> للانظمة المحاسبية  pnmsoft  عروض خاصة لشركة </p>
+        <i class="fas fa-table"></i>
+    </div>
+   
+</div>
+<table>
+<thead>
+    <tr>
+<th>
+     نوع البرنامج
+</th>
+<th>
+    قيمته البرنامج
+</th>
+<th>
+     الخصم
+</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+            برنامج المدارس
+        </td>
+        <td>
+            <span class="price">12$</span>
+        </td>
+
+
+        <td>
+            <span class="count">40%</span>
+            
+        </td>
+
+    </tr>
+
+
+
+    <tr>
+        <td>
+            برنامج البصمة
+        </td>
+        <td>
+            <span class="price">132$</span>
+        </td>
+
+
+        <td>
+            <span class="count">30%</span>
+            
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            برنامج السوبرماركت
+        </td>
+        <td>
+            <span class="price">5643$</span>
+        </td>
+
+
+        <td>
+            <span class="count">50%</span>
+            
+        </td>
+
+    </tr>
+
+
+
+    <tr>
+        <td>
+            برنامج المختبرات
+        </td>
+        <td>
+            <span class="price">11$</span>
+        </td>
+
+
+        <td>
+            <span class="count">40%</span>
+            
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            برنامج المستشفيات
+        </td>
+        <td>
+            <span class="price">92$</span>
+        </td>
+
+
+        <td>
+            <span class="count">74</span>
+            
+        </td>
+
+    </tr>
+
+
+
+
+
+
+
+</tbody>
+
+
+</table>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

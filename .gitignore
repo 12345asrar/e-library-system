@@ -1,0 +1,4 @@
+# PHP gitignore
+/vendor/
+.env
+*.log
